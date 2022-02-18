@@ -1,0 +1,11 @@
+name: 'Close duplicated pull request'
+description: 'It closes a PR if duplicated and already approved'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
